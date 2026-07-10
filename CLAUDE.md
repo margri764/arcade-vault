@@ -8,14 +8,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 `AGENTS.md` (imported above) warns that this Next.js has breaking changes vs. what you likely know. **Before writing any Next.js/React code, read the relevant guide under `node_modules/next/dist/docs/`** — App Router docs live in `01-app/`. Do not rely on training-data assumptions about APIs, file conventions, or config.
 
-## Commands
-
-```bash
-npm run dev     # start dev server (http://localhost:3000)
-npm run build   # production build
-npm start       # serve the production build
-npm run lint    # ESLint (flat config, eslint.config.mjs)
-```
 
 No test runner is configured yet.
 
@@ -31,3 +23,6 @@ Development follows **Spec Driven Design** using the `/spec` and `/spec-impl` sk
 - **React 19**, **TypeScript** in `strict` mode.
 - **Tailwind CSS v4** — configured entirely in CSS via `@import "tailwindcss"` and the `@theme` block in `app/globals.css`. There is no `tailwind.config.js`; add theme tokens (colors, fonts) in `globals.css`.
 - **Path alias**: `@/*` maps to the repo root (e.g. `import x from "@/app/..."`), per `tsconfig.json`.
+
+## Skills
+Usa siempre /frontend-design para diseñar la interfaz del usuario
